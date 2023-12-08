@@ -6,11 +6,10 @@
   <h1>
     Things
   </h1>
-  <p>Some stuff about things goes here.</p>
-  <form method="post">
+  <form action="{% url 'thing' %}" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <input type="submit" value="Add Thing">
 </form>
 </body>
 </html>
