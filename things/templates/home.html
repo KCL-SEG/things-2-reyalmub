@@ -6,10 +6,10 @@
   <h1>
     Things
   </h1>
-  <form action="{% url 'thing' %}" method="post">
+  <form action=" {%url '' %}" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Add Thing">
+    {{form.as_p}}
+    <input type="submit" value="Add Things">
 </form>
 </body>
 </html>
